@@ -1,7 +1,7 @@
 package lab0_2;
 import java.util.Scanner;
 
-public class Main_202114061 {
+public class Mycode {
 
 	public static void main(String[] args) {
 		System.out.println("lab0_2:김수진");
