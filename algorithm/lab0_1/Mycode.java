@@ -1,7 +1,7 @@
 package lab0_1;
 import java.util.Scanner;
 
-public class Mycode {
+public class Main_202114061 {
 
 	public static void main(String[] args) {
 		System.out.println("lab0_1:김수진");
@@ -12,6 +12,7 @@ public class Mycode {
 		int nb = sc.nextInt();
 		
 		int[] rangelist = new int[nb-lb+1];
+//		int[] numberlist = new int[n];
 		int[] countlist = new int[nb-lb+1];
 
 		int cnt = 0;
@@ -19,8 +20,16 @@ public class Mycode {
 			rangelist[i] = lb+cnt;
 			cnt++;
 		}
+		for (int i=0;i<n;i++) {
+			int test = sc.nextInt();
+			for (int r=0;r<rangelist.length;r++) {
+				if(test==rangelist[r]) {
+					countlist[r]++;
+				}
+			}
+		}
 
-		
+		/*//랜덤으로 n개 뽑는 방법
 		for (int i=0;i<n;i++) {
 			int test = (int)(Math.random()*201-100); //-100~100
 			System.out.printf(test + " "); 
@@ -32,7 +41,7 @@ public class Mycode {
 				
 			}
 		}
-		System.out.println();
+		*/
 		
 		for (int i:countlist) {
 			System.out.printf(i + " ");
